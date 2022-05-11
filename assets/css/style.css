@@ -239,12 +239,6 @@ section {
 
 }
 
-.intro {
-
-    text-align: center;
-
-}
-
 .intro p {
 
     line-height: 1.7;
@@ -257,11 +251,11 @@ section {
 
     margin: 0 auto;
 
+    text-align: center;
+
 }
 
 .steps {
-
-    text-align: center;
 
     background: #fce138;
 
@@ -273,13 +267,15 @@ section {
 
     color: #024e76;
 
-    margin-bottom: 35px;
-
-    padding: 0 100px 20px 100px;
-
-    display: inline-block;
-
     border-bottom: 3px solid;
+
+    padding-bottom: 20px;
+
+    text-align: center;
+
+    margin: 0 auto 35px auto;
+
+    width: 50%;
 
 }
 
@@ -334,8 +330,6 @@ section {
 
 .trainers {
 
-    text-align: center;
-
 }
 
 .trainer {
@@ -382,6 +376,12 @@ section {
 
 }
 
+.flex-row {
+
+    display: flex;
+
+}
+
 .trainer-bio h3 {
 
     font-size: 32px;
@@ -411,8 +411,6 @@ section {
 /* Reach Out Styles Start */
 
 .contact {
-
-    text-align: center;
 
     background: #024e76;
 
