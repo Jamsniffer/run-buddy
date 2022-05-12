@@ -28,6 +28,20 @@ header {
 
     flex-wrap: wrap;
 
+    position: -webkit-sticky;
+
+    position: sticky;
+
+    top: 0;
+
+    background-image: url("../images/hero-bg.jpg");
+
+    background-size: cover;
+
+    background-attachment: fixed;
+
+    background-position: 80%;
+
 }
 
 header h1 {
@@ -39,6 +53,8 @@ header h1 {
     color: #fce138;
 
     margin: 0;
+
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -78,6 +94,20 @@ header nav ul li a {
     font-weight: lighter;
 
     font-size: 1.55vw;
+
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+header nav ul li a:hover {
+
+    background: #fce138;
+
+    color: #024e76;
+
+    border-radius: 15px;
+
+    text-shadow: none;
 
 }
 
@@ -133,7 +163,9 @@ section {
 
     background-size: cover;
 
-    background-position: center;
+    background-attachment: fixed;
+
+    background-position: 80%;
 
     display: flex;
 
@@ -169,13 +201,15 @@ section {
 
     color: #fce138;
 
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 }
 
 .hero-form {
 
     color: #024e76;
 
-    background-color: #fce138;
+    background-color: rgba(252, 225, 56, .8);
     
     padding: 20px;
 
@@ -184,6 +218,8 @@ section {
     width: 40%;
 
     margin: 3.5%;
+    
+    border-radius: 15px;
 
 }
 
@@ -217,6 +253,18 @@ section {
 
     margin-bottom: 15px;
 
+    border-radius: 10px;
+
+    background-color: rgba(255,255,255, 0.75);
+
+}
+
+.form-input:focus {
+
+    background-color: rgba(255,255,255, 1);
+
+    outline: none;
+
 }
 
 .hero-form label {
@@ -236,6 +284,14 @@ section {
     padding: 10px 20px;
 
     font-size: 16px;
+
+    border-radius: 10px;
+
+}
+
+.hero-form button:hover {
+
+    background-color: #39a6b2;  
 
 }
 
@@ -326,8 +382,6 @@ section {
 
     width: 80%;
 
-    border-bottom: 1px solid #39a6b2;
-
     display: flex;
 
     flex-wrap: wrap;
@@ -336,6 +390,13 @@ section {
 
     justify-content: space-between;
 
+    border-bottom: 1px solid #39a6b2;
+
+}
+
+.step:last-child {
+
+    border-bottom: none;
 }
 
 .step-info {
@@ -540,7 +601,20 @@ section {
 
     margin-top: 5px;
 
+    border-radius: 10px;
+
+    background-color: rgba(255,255,255, 0.75);
+
 }
+
+.contact-form input:focus, .contact-form textarea:focus {
+
+    background-color: rgba(255,255,255, 1);
+    
+    outline: none;
+  
+}
+  
 
 .contact-form button {
 
@@ -557,7 +631,17 @@ section {
     padding: 15px 0;
 
     font-size: 16px;
+
+    border-radius: 10px;
     
+}
+
+.contact-form button:hover {
+
+    color: #fce138;
+
+    background: #39a6b2;
+
 }
 
 @media screen and (max-width: 980px) {
@@ -565,6 +649,7 @@ section {
     header {
         padding-bottom: 0;
         justify-content: center;
+        position: relative;
     }
     
     header h1 {
